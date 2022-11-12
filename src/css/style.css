@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* Primary */
+  --accent-soft-violet: #aa5cdb;
+  --bg-card-dark-desaturated-blue: #1b1938;
+  --bg-main-very-dark-blue: #090b1a;
+  --header-img-soft-violet: #590093;
+
+  /* Neutral */
+  --h-slightly-white: rgba(255, 255, 255, 0.6);
+  --p-slightly-white: rgba(255, 255, 255, 0.75);
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-main-very-dark-blue);
+  color: var(--white);
+  font-size: 15px;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+#card {
+  background-color: var(--bg-card-dark-desaturated-blue);
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  width: 1080px;
+}
+
+#card .img-header {
+  position: relative;
+  width: 100%;
+}
+
+#card img {
+  border-radius: 0 16px 16px 0;
+  height: 100%;
+  width: 100%;
+}
+
+#card .img-color {
+  background-color: var(--header-img-soft-violet);
+  border-radius: 0 16px 16px 0;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+}
+
+#card .img-header-mobile {
+  display: none;
+}
+
+#card .content {
+  align-items: center;
+  display: flex;
+  padding: 70px;
+  padding-right: 0px;
+}
+
+#card .content-text {
+  padding-right: 120px;
+}
+
+#card .content .content-text h1 {
+  font-size: 33px;
+  font-weight: 700;
+}
+
+#card .content .content-text h1 span {
+  color: var(--accent-soft-violet);
+}
+
+#card .content .content-text>p {
+  color: var(--h-slightly-white);
+  font-weight: 400;
+  line-height: 23px;
+  margin-top: 30px;
+}
+
+#card .content .content-text .stats {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  padding-right: 50px;
+}
+
+#card .content .content-text .stats h4 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#card .content .content-text .stats p {
+  color: var(--p-slightly-white);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 11px;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.attribution {
+  font-size: 11px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--white);
+}
+
+.attribution a:hover {
+  color: var(--accent-soft-violet);
+  transition: 0.3s;
+}
+
+@media (width <=1080px) {
+  #card {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 24px;
+    text-align: center;
+    width: 80%;
+  }
+
+  #card .img-header {
+    display: flex;
+    justify-content: center;
+  }
+
+  #card img {
+    border-radius: 16px 16px 0 0;
+  }
+
+  #card .img-color {
+    border-radius: 16px 16px 0 0;
+  }
+
+  #card .img-header-mobile {
+    display: block;
+  }
+
+  #card .img-header-desktop {
+    display: none;
+  }
+
+  #card .content {
+    padding: 50px 10%;
+  }
+
+  #card .content-text {
+    padding: 0;
+  }
+
+  #card .content .content-text>p {
+    font-size: 16px;
+    padding: 0 10%;
+    margin-top: 16px;
+  }
+
+  #card .content .content-text .stats {
+    margin-top: 5%;
+    padding: 32px 10% 0;
+  }
+
+  #card .content .content-text .stats h4 {
+    font-size: 25px;
+  }
+
+  #card .content .content-text .stats p {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
+
+@media (width <=485px) {
+  #card {
+    width: 90%;
+  }
+
+  #card .content {
+    padding: 24px;
+  }
+
+  #card .content .content-text h1 {
+    font-size: 25px;
+  }
+
+  #card .content .content-text>p {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  #card .content .content-text .stats {
+    flex-direction: column;
+    height: 222px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  #card .content .content-text .stats h4 {
+    font-size: 25px;
+  }
+
+  #card .content .content-text .stats p {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
