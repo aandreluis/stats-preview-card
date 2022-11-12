@@ -34,7 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🌎 Links
 
-- Solution: []()
-- Live Site: []()
+- Solution: [https://www.frontendmentor.io/solutions/stats-preview-card-component-html-css-Q13xlk2HbV](https://www.frontendmentor.io/solutions/stats-preview-card-component-html-css-Q13xlk2HbV)
+- Live Site: [https://stats-preview-card-aandreluis.netlify.app/](https://stats-preview-card-aandreluis.netlify.app/)
 
 ---
