@@ -103,7 +103,7 @@ body {
   padding-right: 50px;
 }
 
-#card .content .content-text .stats h4 {
+#card .content .content-text .stats h2 {
   font-size: 22px;
   font-weight: 700;
 }
@@ -181,7 +181,7 @@ body {
     padding: 32px 10% 0;
   }
 
-  #card .content .content-text .stats h4 {
+  #card .content .content-text .stats h2 {
     font-size: 25px;
   }
 
@@ -217,7 +217,7 @@ body {
     margin-top: 0;
   }
 
-  #card .content .content-text .stats h4 {
+  #card .content .content-text .stats h2 {
     font-size: 25px;
   }
 
